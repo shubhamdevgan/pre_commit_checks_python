@@ -37,3 +37,6 @@ Incase your config files don't work,try by moving the `.flake8` and `pyproject.t
 files that contain this line are skipped: `# flake8: noqa`
 
 lines that contain a `# noqa` comment at the end will not issue warnings.
+
+Other flake8 warnings:
+https://flake8.pycqa.org/en/2.5.5/warnings.html
