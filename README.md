@@ -40,3 +40,5 @@ lines that contain a `# noqa` comment at the end will not issue warnings.
 
 Other flake8 warnings:
 https://flake8.pycqa.org/en/2.5.5/warnings.html
+
+To update hooks to latest version: `pre-commit autoupdate`
