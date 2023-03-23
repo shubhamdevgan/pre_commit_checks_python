@@ -17,3 +17,17 @@ repos:
     rev: 3.9.2
     hooks:
     - id: flake8
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0 # Use the ref you want to point at
+  hooks:
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      - id: trailing-whitespace
+      - id: check-docstring-first
+      - id: check-merge-conflict
+      - id: detect-aws-credentials
+        args: ["--allow-missing-credentials"]
+      - id: no-commit-to-branch
+        args: [--branch, main]
+      - id: end-of-file-fixer
+      - id: detect-private-key
